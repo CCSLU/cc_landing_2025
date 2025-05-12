@@ -44,11 +44,11 @@ const Hero = () => {
                     <Container className="relative hidden lg:block overflow-hidden">
                         <button className="group relative grid overflow-hidden rounded-full px-2 py-1 shadow-[0_1000px_0_0_hsl(0_0%_15%)_inset] transition-colors duration-200 mx-auto">
                             <span>
-                                <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
+                                <span className="spark mask-gradient absolute inset-0 h-full w-full animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:-rotate-90 before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:inset-[0_auto_auto_50%] before:[translate:-50%_-15%]" />
                             </span>
-                            <span className="backdrop absolute inset-[1px] rounded-full bg-background transition-colors duration-200 group-hover:bg-neutral-800" />
+                            <span className="backdrop absolute inset-px rounded-full bg-background transition-colors duration-200 group-hover:bg-neutral-800" />
                             <span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center">
-                                <span className="px-2 py-[0.5px] h-[18px] tracking-wide flex items-center justify-center rounded-full bg-gradient-to-r from-sky-400 to-blue-600 text-[9px] font-medium mr-2 text-white">
+                                <span className="px-2 py-[0.5px] h-[18px] tracking-wide flex items-center justify-center rounded-full bg-linear-to-r from-sky-400 to-blue-600 text-[9px] font-medium mr-2 text-white">
                                     NEW
                                 </span>
                                 Explore the 2024 recap
@@ -56,7 +56,7 @@ const Hero = () => {
                         </button>
                     </Container>
                     <Container delay={0.15}>
-                        <h1 className="text-4xl md:text-4xl lg:text-7xl font-bold text-center !leading-tight max-w-4xl mx-auto">
+                        <h1 className="text-4xl md:text-4xl lg:text-7xl font-bold text-center leading-tight! max-w-4xl mx-auto">
                             Transform your {" "}
                             <span className="">
                                 marketing {" "}
@@ -81,7 +81,7 @@ const Hero = () => {
                     </Container>
                     <Container delay={0.3} className="relative">
                         <div className="relative rounded-xl lg:rounded-[32px] border border-border p-2 backdrop-blur-lg mt-10 max-w-6xl mx-auto">
-                            <div className="absolute top-1/8 left-1/2 -z-10 bg-gradient-to-r from-sky-500 to-blue-600 w-1/2 lg:w-3/4 -translate-x-1/2 h-1/4 -translate-y-1/2 inset-0 blur-[4rem] lg:blur-[10rem] animate-image-glow"></div>
+                            <div className="absolute top-1/8 left-1/2 -z-10 bg-linear-to-r from-sky-500 to-blue-600 w-1/2 lg:w-3/4 -translate-x-1/2 h-1/4 -translate-y-1/2 inset-0 blur-[4rem] lg:blur-[10rem] animate-image-glow"></div>
                             <div className="hidden lg:block absolute -top-1/8 left-1/2 -z-20 bg-blue-600 w-1/4 -translate-x-1/2 h-1/4 -translate-y-1/2 inset-0 blur-[10rem] animate-image-glow"></div>
 
                             <div className="rounded-lg lg:rounded-[22px] border border-border bg-background">
@@ -95,7 +95,7 @@ const Hero = () => {
                             </div>
 
                         </div>
-                        <div className="bg-gradient-to-t from-background to-transparent absolute bottom-0 inset-x-0 w-full h-1/2"></div>
+                        <div className="bg-linear-to-t from-background to-transparent absolute bottom-0 inset-x-0 w-full h-1/2"></div>
                     </Container>
 
                 </div>

@@ -40,7 +40,7 @@ const CTA = () => {
                             ease: "linear"
                         }}
                     />
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-medium !leading-snug">
+                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-medium leading-snug!">
                         Ready to boost your <br /> <span className="font-subheading italic">marketing</span> ?
                     </h2>
                     <p className="text-sm md:text-lg text-center text-accent-foreground/80 max-w-2xl mx-auto mt-4">

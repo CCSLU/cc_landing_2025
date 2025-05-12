@@ -26,7 +26,7 @@ const Pricing = () => {
             <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
                 <Container>
                     <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
-                        <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
+                        <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium leading-snug! mt-6">
                             Find the right plan that suits <br className="hidden lg:block" /> <span className="font-subheading italic">your needs</span>
                         </h2>
                         <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
@@ -38,8 +38,8 @@ const Pricing = () => {
                 <Container delay={0.2}>
                     <div className="flex items-center justify-center space-x-4 mt-6">
                         <span className="text-base font-medium">Monthly</span>
-                        <button onClick={handleSwitch} className="relative rounded-full focus:outline-none">
-                            <div className="w-12 h-6 transition rounded-full shadow-md outline-none bg-blue-500"></div>
+                        <button onClick={handleSwitch} className="relative rounded-full focus:outline-hidden">
+                            <div className="w-12 h-6 transition rounded-full shadow-md outline-hidden bg-blue-500"></div>
                             <div
                                 className={cn(
                                     "absolute inline-flex items-center justify-center w-4 h-4 transition-all duration-500 ease-in-out top-1 left-1 rounded-full bg-white",
